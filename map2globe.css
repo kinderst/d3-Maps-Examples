@@ -1,0 +1,75 @@
+#map {
+  position: relative;
+}
+
+svg {
+  background: #FFF;
+  pointer-events: all;
+}
+
+.zone {
+  stroke-width: .5px;
+  stroke-linejoin: round;
+  cursor: pointer;
+}
+
+.zoneTooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  background: #fff;
+  padding: 3px;
+  text-align: left;
+  border: solid #ccc 1px;
+  color: #666;
+  font-size: 12px;
+  font-family: sans-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;  
+}
+
+.infoLabel {   
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  display: none;
+  border: solid #ccc 1px;
+  color: #666;
+  background: #FFFFFF;    
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px #66C2FF;
+  -moz-box-shadow: 0px 0px 3px #66C2FF;
+  box-shadow: 0px 0px 3px #66C2FF;
+  text-align: left;            
+  padding: 2px;      
+  font-size: 12px;
+  font-family: sans-serif; 
+  pointer-events: none;       
+}
+
+.infoLabel span {
+  margin: 0px 5px;
+}
+
+.mapData {
+  fill: #E6E6E6;
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
+
+.ortho {
+  fill: #E6E6E6;
+  stroke: #E6E6E6;
+  stroke-width: 1px;  
+}
+
+.mapData:hover {
+  fill: #66C2FF;
+}
+
+.focused {
+  fill: #FF7519;
+}
