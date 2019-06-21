@@ -57,9 +57,9 @@ svg
     .call(zoom); // delete this line to disable free zooming
     // .call(zoom.event); // not in d3 v4
 
-d3.json("/Vietnam-Maps/world-50m.json", function(error, world) {
+d3.json("world-50m.json", function(error, world) {
   if (error) throw error;
-  d3.json("Vietnam-Maps/locations.json", function(error, locations) {
+  d3.json("locations.json", function(error, locations) {
     if (error) throw error;
 
     g.selectAll("path")
