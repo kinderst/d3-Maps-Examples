@@ -112,9 +112,9 @@ select {
 
 
   queue()
-  .defer(d3.json, "/world-110m.json")
-  .defer(d3.tsv, "/world-110m-country-names.tsv")
-  .defer(d3.json, "/locations.json")
+  .defer(d3.json, "world-110m.json")
+  .defer(d3.tsv, "world-110m-country-names.tsv")
+  .defer(d3.json, "locations.json")
   .await(ready);
 
   //Main function
