@@ -26,7 +26,7 @@
 
 </style>
 <body>
-  <h1>Hello</h1>
+  <h1>Maps</h1>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
 <script>
@@ -54,7 +54,7 @@ svg.append("rect")
 
 var g = svg.append("g");
 
-d3.json("/us.json", function(error, us) {
+d3.json("us.json", function(error, us) {
   if (error) throw error;
 
   g.append("g")
